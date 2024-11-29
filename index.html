@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Voorbeeld</title>
+    <!-- jQuery via CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Eigen CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- jQuery Script -->
+    <script>
+        $(document).ready(function(){
+            // Bij het klikken op de knop met id="showTextButton"
+            $("#showTextButton").click(function(){
+                // Toon de verborgen tekst met id="hiddenText"
+                $("#hiddenText").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Header van de pagina -->
+    <header class="bg-dark text-white text-center py-3">
+        <h1>jQuery Toepassing Voorbeeld</h1>
+    </header>
+
+    <!-- Container voor de inhoud van de pagina -->
+    <div class="container mt-4">
+        <p>Welkom bij mijn jQuery-voorbeeld!</p>
+        <!-- Knop om de verborgen tekst te tonen -->
+        <button id="showTextButton" class="btn btn-primary mb-3">Toon/Verberg Tekst</button>
+        <!-- Verborgen tekst die wordt weergegeven bij het klikken op de knop -->
+        <p id="hiddenText" style="display:none;">Dit is de verborgen tekst die zichtbaar wordt bij het klikken op de knop.</p>
+    </div>
+
+    <!-- Footer met copyrightvermelding -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Uw Naam</p>
+    </footer>
+</body>
+</html>
